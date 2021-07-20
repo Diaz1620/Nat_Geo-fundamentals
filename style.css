@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root{
+    --primary: #fc0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* menu */
+nav.menu{
+    display: flex;
+    color: black;
+    height: 5vh;
+    background-color: white;
+    height: 5vh;
+    padding: .5rem;
+    justify-content: space-between;
+}
+
+nav img.logo{
+    width: 7rem;
+}
+
+nav p{
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    margin-right: 1rem;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.renew-text,.menu-text,.fa-search{
+    display: none;/*hide*/
+}
+
+.icons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe-btn{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-size: .7rem;
+    background-image: linear-gradient(#fc0,#fc0);
+    background-position: 0% 0% ;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .25s ease-in;
+}
+
+.subscribe-btn:hover{
+    background-size: 100% 100%;
+    color: black;
+}
+
+@media(min-width:768px){
+    .renew-text,.menu-text,.fa-search{
+        display: block;
+    }
+    nav.menu i{
+        margin-right: 1rem;
+    }
+    .renew-text{
+        text-transform: capitalize;
+        font-weight: 300;
+        letter-spacing: 0;
+        border-bottom: 2px solid var(--primary);
+    }
+    /* .renew-text:hover{
+        background-color: var(--primary);
+    } */
+}
+
+/* header */
+header.site-header{
+    text-align: center;
+    height: 12rem;
+}
+
+header.site-header h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.subscribe-underline,.renew-text{
+        /* background-color: var(--primary); */
+    background-image: linear-gradient(#fc0,#fc0);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 0;
+    border-bottom: 2px solid var(--primary);
+    transition: background-size .125s ease-in;
+}
+
+.subscribe-underline:hover,.renew-text:hover{
+    /* background-color: var(--primary); */
+    background-size: 100% 100%;
+    color: black;
+}
+
+/* .testing{
+    background-color: black;
+    background-position: 0% 100%;
+    border-bottom: 2px solid var(--primary);
+    transition: background-color 2s ease-in;
+}
+
+.testing:hover{
+    background-color: var(--primary);
+} */
+
+.little-line{
+    background-color: #fc0;
+    height: .25rem;
+    margin: 1.3125rem auto 0;
+    width: 4rem;
+}
